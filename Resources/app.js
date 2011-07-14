@@ -17,16 +17,14 @@ var tab1 = Titanium.UI.createTab({
     title:'Tab 1',
     window:win1
 });
+Ti.include('/others/http_requester.js')
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
+
+var JsonWindow=win1;
+httpRequest({
+	url:'http://foolrulez.org/slide/api/chapter/tonnurasan/en/1/6/1/page/1',
+	urlType:'/others/json_files/images.js'
 });
-
-win1.add(label1);
 
 //
 // create controls tab and root window
@@ -41,23 +39,13 @@ var tab2 = Titanium.UI.createTab({
     window:win2
 });
 
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win2.add(label2);
-
 
 
 //
 //  add tabs
 //
 tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+//tabGroup.addTab(tab2);  
 
 
 // open tab group
