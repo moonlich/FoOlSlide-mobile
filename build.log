@@ -5,14 +5,15 @@ Logfile initialized
 [INFO] Titanium SDK version: 1.7.1 (06/21/11 14:28 1293a6d)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
-[DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.015000 seconds on emulator to get ready
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 10 seconds)
+[DEBUG] waited 10.042000 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
 [DEBUG] com.foolrulez.foolslide.appcelerator installed? True
 [INFO] Fastdev server running, deploying in Fastdev mode
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: D:\programming\apps\workspace\FoOlSlide\Resources\app.js => D:\programming\apps\workspace\FoOlSlide\build\android\bin\assets\Resources\app.js
-[TRACE] COPYING CREATED FILE: D:\programming\apps\workspace\FoOlSlide\Resources\others\http_requester.js => D:\programming\apps\workspace\FoOlSlide\build\android\bin\assets\Resources\others\http_requester.js
-[TRACE] COPYING CREATED FILE: D:\programming\apps\workspace\FoOlSlide\Resources\others\json_files\images.js => D:\programming\apps\workspace\FoOlSlide\build\android\bin\assets\Resources\others\json_files\images.js
+[TRACE] COPYING MODIFIED FILE: D:\programming\apps\workspace\FoOlSlide\Resources\others\json_files\images.js => D:\programming\apps\workspace\FoOlSlide\build\android\bin\assets\Resources\others\json_files\images.js
 [INFO] Tiapp.xml unchanged, skipping class generation
 [DEBUG] Processing Android resource drawables
 [INFO] Waiting for SDCard to become available..

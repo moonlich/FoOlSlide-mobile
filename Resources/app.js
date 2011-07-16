@@ -1,5 +1,11 @@
 // this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
+var isAndroid= Ti.Platform.osname == 'android'?true:false;
+if (isAndroid) {
+  var BGC='#000'
+}else{
+  var BGC='#fff'
+}
+Titanium.UI.setBackgroundColor(BGC);
 
 // create tab group
 var tabGroup = Titanium.UI.createTabGroup();
@@ -9,12 +15,12 @@ var tabGroup = Titanium.UI.createTabGroup();
 // create base UI tab and root window
 //
 var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
+    title:'blubb',
+    backgroundColor:BGC
 });
 var tab1 = Titanium.UI.createTab({  
     icon:'KS_nav_views.png',
-    title:'Tab 1',
+    title:'blubb',
     window:win1
 });
 Ti.include('/others/http_requester.js')
@@ -22,7 +28,7 @@ Ti.include('/others/http_requester.js')
 
 var JsonWindow=win1;
 httpRequest({
-	url:'http://foolrulez.org/slide/api/chapter/tonnurasan/en/1/6/1/page/1',
+	url:'http://foolrulez.org/slide/api/reader/chapters/orderby/desc_created/',
 	urlType:'/others/json_files/images.js'
 });
 
@@ -31,7 +37,7 @@ httpRequest({
 //
 var win2 = Titanium.UI.createWindow({  
     title:'Tab 2',
-    backgroundColor:'#fff'
+    backgroundColor:BGC
 });
 var tab2 = Titanium.UI.createTab({  
     icon:'KS_nav_ui.png',

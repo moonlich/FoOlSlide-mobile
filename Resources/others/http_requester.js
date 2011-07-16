@@ -43,7 +43,8 @@ var httpRequest = function(params) {
       if (this.status==0) {
         Ti.API.error('maybe a syntax error somewhere in the code');
       };
-      WaiterView.children[0].text='es ist ein fehler aufgetreten\nbitte probieren sie es nocheinmal oder melden sie das problem bei dem support';
+      WaiterView.children[0].text='es ist ein fehler aufgetreten\nbitte probieren sie es nocheinmal oder melden sie das problem bei dem support\n\n'
+      +xhr.responseText;
   };  
   
   /**
